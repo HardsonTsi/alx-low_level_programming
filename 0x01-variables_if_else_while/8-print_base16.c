@@ -13,7 +13,7 @@ int main(void)
 
 	for (n = 48; n < 63; n++)
 	{
-		if (n > 57)
+		if (n >= 57)
 		{
 			tmp = n - 57;
 			a = 97 + tmp;
