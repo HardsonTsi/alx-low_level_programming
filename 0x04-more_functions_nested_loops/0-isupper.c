@@ -5,11 +5,11 @@
  * @c: An input character
  * Return: 1 if c is uppercase or 0 otherwise
  */
-int _isupper(char c)
+int _isupper(int c)
 {
 	int isupper = 0;
 
-    if (c >= 'A' && c <= 'Z')
+    if (c >= 65 && c <= 98)
     {
         isupper = 1;
     }
