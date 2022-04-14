@@ -8,7 +8,8 @@
 
 int _isdigit(int c)
 {
-    int isdigit = 0;
+	int isdigit = 0;
+
 	if ((c >= 48) && (c <= 57))
 	{
 		isdigit = 1;
