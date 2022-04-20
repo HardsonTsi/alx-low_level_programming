@@ -1,19 +1,19 @@
 #include "main.h"
+
 /**
- * _puts - prints a string
- * @phrase: a pointer to an integer that will be changed
- * Return: 0
+ * _puts - prints a string ...
+ * Description: It prints string followed by a new line
+ *@str: the string to print.
+ *
  */
-void _puts(char *phrase)
+
+void _puts(char *str)
 {
-char *c;
-int d;
-
-c = phrase;
-
-for (d = 0; c[d]; d++)
-{
-_putchar (c[d]);
-}
-
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
