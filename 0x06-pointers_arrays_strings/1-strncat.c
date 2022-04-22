@@ -9,15 +9,15 @@
  * Return: pointer to resulting string dest
  */
 
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int x, y;
 
 for (x = 0; dest[x] != '\0'; x++)
 ;
-for (y = 0; src[y] != '\0'; y++)
+for (y = 1; y <= n; y++)
 {
-dest[x] = src[y];
+dest[x] = src[y - 1];
 x++;
 }
 dest[x] = '\0';
