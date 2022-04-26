@@ -1,19 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_chessboard - board to print
- * @a: prints things
- * Return: returns output
+ * print_diagsums - prints diagonal summaries
+ * @a: array
+ * @size: size of diagonal
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int ini, dia1 = 0, dia2 = 0;
 
-	for (i = 0; i < 8; i++)
-	{
-		for (j = 0; j < 8; j++)
-		{
-			_putchar(a[i][j]);
-		}
-		_putchar('\n');
-	}
+	for (ini = 0; ini < size * size; ini += (size + 1))
+		dia1 += a[ini];
+	for (ini = size - 1; ini < (size * size) - (size - 1); ini += (size - 1))
+		dia2 += a[ini];
+	printf("%d, %d\n", dia1, dia2);
 }
