@@ -20,5 +20,16 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
+<<<<<<< HEAD
 	return (search);
+=======
+
+	if (*s == c)
+	{
+		return (s);
+	}
+
+
+	return (0);
+>>>>>>> e5233573bcac7287ce93b323effea46c29142660
 }
