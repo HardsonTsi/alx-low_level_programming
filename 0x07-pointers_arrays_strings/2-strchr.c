@@ -8,16 +8,16 @@
   **/
 
 char *_strchr(char *s, char c)
-{   
-
-    char *search = NULL;
+{
 
 	while (*s != '\0' && *s != c)
 	{
-		if (*s == c) 
+		if (*s == c)
 		{
-			search = s; 
+			return (s);
 		}
-		s++;
-    }
+
+		++s;
+	}
+	return (0);
 }
